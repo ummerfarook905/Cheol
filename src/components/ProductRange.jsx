@@ -1,4 +1,8 @@
 import React from "react";
+import Ladder from "../assets/ladder/ladder.jpeg";
+import Tray from "../assets/tray/tray2.png";
+import Trunking from "../assets/trunking/trunking2.png";
+import Support from "../assets/support/support2.png";
 
 const products = [
   {
@@ -7,7 +11,7 @@ const products = [
     badge: "Heavy Duty",
     desc: "Heavy-duty cable ladders for industrial and commercial installations. Widths 100–900mm, heights 60–150mm.",
     image:
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200",
+      Ladder,
     large: true,
   },
   {
@@ -16,7 +20,7 @@ const products = [
     badge: "",
     desc: "",
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200",
+      Tray,
   },
   {
     id: 3,
@@ -24,7 +28,7 @@ const products = [
     badge: "Multi Component",
     desc: "",
     image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200",
+      Trunking,
   },
   {
     id: 4,
@@ -32,7 +36,7 @@ const products = [
     badge: "Structural",
     desc: "Metal framing strut channels 41×41 and 41×21mm. Comprehensive brackets, post bases and fittings range.",
     image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600",
+      Support,
     full: true,
   },
 ];

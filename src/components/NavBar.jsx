@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import LogoImage from "../assets/images/Logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -20,7 +21,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="/images/logo.png"
+              src= {LogoImage}
               alt="Cheol"
               className="h-12 w-auto"
             />

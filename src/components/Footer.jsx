@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import LogoImage from "../assets/images/Logo.png";
 import {
   Phone,
   Mail,
@@ -16,7 +17,7 @@ export default function Footer() {
         <div>
 
           <img
-            src="/images/logo.png"
+            src= {LogoImage}
             className="h-12 mb-6"
             alt=""
           />

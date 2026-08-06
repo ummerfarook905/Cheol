@@ -1,83 +1,139 @@
-import hero from "../assets/hero.png";
-
-import {
-    Shield,
-    Settings,
-    Link,
-    BarChart3
-} from "lucide-react";
-
-
+import heroImage from "../assets/hero.png";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
+  return (
+    <section className="bg-white py-12 lg:py-20">
+      <div className="max-w-7xl mx-auto px-6">
 
-    return (
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-        <section
-            className="h-screen bg-cover bg-center relative"
-            style={{
-                backgroundImage: `url(${hero})`
-            }}
-        >
+          {/* Left */}
 
-            <div className="absolute inset-0 bg-gradient-to-r from-[#020B25] via-[#03153d]/90 to-transparent"></div>
+          <div>
 
-            <div className="relative w-full mx-auto h-full px-8 flex items-center">
+            <h1 className="mt-8 font-black uppercase leading-none">
 
-                <div className="max-w-xl">
+              <span className="block text-[#0F2746] text-5xl lg:text-7xl">
+                BUILT
+              </span>
 
-                    {/* <h1 className="text-7xl font-extrabold text-white leading-tight">
+              <span className="block text-[#0F2746] text-5xl lg:text-7xl">
+                FOR
+              </span>
 
-                        BUILT FOR
+              <span className="block text-yellow-600 italic text-5xl lg:text-7xl">
+                PERFOMANCE
+              </span>
 
-                        <span className="block text-red-600">
-                            PERFORMANCE.
-                        </span>
+            </h1>
 
-                    </h1> */}
+            <p className="mt-6 text-gray-600 max-w-lg leading-8">
+              25 years of R&D. Engineered for Asia & MENA construction sites.
+              BS EN certified across all product ranges.
+            </p>
 
-                    <div className="w-28 h-1 bg-red-600 my-8"></div>
+            {/* Stats */}
 
-                    {/* <p className="text-gray-300 text-2xl leading-10">
+            <div className="grid grid-cols-3 gap-6 mt-10">
 
-                        CABLE MANAGEMENT SYSTEMS THAT DELIVER
-                        STRENGTH &
-                        RELIABILITY.
+              <div>
+                <h3 className="text-4xl font-bold text-[#0F2746]">25+</h3>
+                <p className="text-sm text-gray-500 mt-2">
+                  YEARS R&D
+                </p>
+              </div>
 
-                    </p> */}
+              <div>
+                <h3 className="text-4xl font-bold text-[#0F2746]">4</h3>
+                <p className="text-sm text-gray-500 mt-2">
+                  PRODUCTS
+                </p>
+              </div>
 
-                    {/* <div className="grid grid-cols-4 mt-20">
-
-                        <FeatureCard
-                            icon={<Shield />}
-                            title="DURABLE"
-                            subtitle="BUILT TO LAST"
-                        />
-
-                        <FeatureCard
-                            icon={<Settings />}
-                            title="VERSATILE"
-                            subtitle="FITS EVERY NEED"
-                        />
-
-                        <FeatureCard
-                            icon={<Link />}
-                            title="RELIABLE"
-                            subtitle="TRUSTED SOLUTIONS"
-                        />
-
-                        <FeatureCard
-                            icon={<BarChart3 />}
-                            title="EFFICIENT"
-                            subtitle="OPTIMIZED FLOW"
-                        />
-
-                    </div> */}
-
-                </div>
+              <div>
+                <h3 className="text-4xl font-bold text-[#0F2746]">
+                  MENA
+                </h3>
+                <p className="text-sm text-gray-500 mt-2">
+                  REACH
+                </p>
+              </div>
 
             </div>
 
-        </section>
-    );
+            {/* Buttons */}
+
+            <div className="flex flex-wrap gap-4 mt-10">
+
+              <Link
+                to="/products"
+                className="flex items-center gap-2 bg-[#0F2746] text-white px-7 py-4 rounded-lg hover:bg-[#16355d]"
+              >
+                View Products
+                <ArrowRight size={18} />
+              </Link>
+
+              <Link
+                to="/contact"
+                className="flex items-center gap-2 border border-[#0F2746] text-[#0F2746] px-7 py-4 rounded-lg hover:bg-[#0F2746] hover:text-white"
+              >
+                Request Quote
+                <ArrowRight size={18} />
+              </Link>
+
+            </div>
+
+          </div>
+
+          {/* Right */}
+
+          <div className="relative">
+
+            <div className="rounded-3xl overflow-hidden shadow-2xl">
+
+              <img
+                src={heroImage}
+                alt="Hero"
+                className="w-full"
+              />
+
+            </div>
+
+            {/* Top Card */}
+
+            {/* <div className="absolute top-6 right-6 bg-white rounded-2xl shadow-lg px-5 py-4">
+
+              <p className="text-yellow-600 text-xs uppercase">
+                BSEN 61537
+              </p>
+
+              <h4 className="font-bold text-[#0F2746]">
+                Certified
+              </h4>
+
+            </div> */}
+
+            {/* Bottom Card */}
+
+            {/* <div className="absolute bottom-6 left-6 bg-white rounded-2xl shadow-lg px-6 py-5">
+
+              <p className="text-xs text-gray-500 uppercase">
+                System Quality
+              </p>
+
+              <h3 className="text-2xl font-bold text-[#0F2746]">
+                100% Verified
+              </h3>
+
+            </div> */}
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
 }

@@ -1,30 +1,34 @@
 import { Link } from "react-router-dom";
+import LadderImage from "../assets/ladder/Ladder2.jpeg";
+import TrayImage from "../assets/tray/tray.jpeg";
+import TrunkingImage from "../assets/trunking/trunking.jpeg";
+import SupportImage from "../assets/support/support.jpeg";
 
 const products = [
   {
     title: "Cable Ladder",
-    image: "/images/ladder.jpg",
+    image: LadderImage,
     route: "/cable-ladder",
     description:
       "Heavy-duty cable ladders manufactured for industrial and commercial installations.",
   },
   {
     title: "Cable Tray",
-    image: "/images/tray.jpg",
+    image: TrayImage,
     route: "/cable-tray",
     description:
       "Perforated cable trays available in multiple sizes and materials.",
   },
   {
     title: "Cable Trunking",
-    image: "/images/trunking.jpg",
+    image: TrunkingImage,
     route: "/cable-trunking",
     description:
       "Multi-compartment cable trunking systems for organized cable routing.",
   },
   {
     title: "Channel & Support",
-    image: "/images/support.jpg",
+    image: SupportImage,
     route: "/support-system",
     description:
       "Structural channels, brackets and support accessories.",

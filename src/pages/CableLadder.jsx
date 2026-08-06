@@ -2,7 +2,7 @@ import ProductHero from "../components/products/ProductHero";
 import ProductCategory from "../components/products/ProductCategory";
 import ProductsNavbar from "../components/ProductsNav";
 import ProductBanner from "../components/ProductBanner";
-import LadderImage from "../assets/ladder/ladder.jpeg";
+import LadderImage from "../assets/ladder/Ladder2.jpeg";
 import FlatBend from "../assets/ladder/90deg Flat Bend.png";
 import flatBend from "../assets/ladder/45deg Flat Bend.png";
 import HorizontalTee from "../assets/ladder/Horizontal Tee.png";

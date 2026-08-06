@@ -3,6 +3,34 @@ import ProductCategory from "../components/products/ProductCategory";
 import ProductsNavbar from "../components/ProductsNav";
 import ProductBanner from "../components/ProductBanner";
 import SupportImage from "../assets/support/support.jpeg";
+import SingleChannelBracket from "../assets/support/Single Channel Bracket.png";
+import DoubleChannelBracket from "../assets/support/Double Channel Bracket.png";
+import CPlateChannelBracket from "../assets/support/C-Plate Channel Bracket.png";
+import TwoPlateSingleBracket  from "../assets/support/2-Plate Single Bracket.png";
+import TwoPlateDoubleBracket  from "../assets/support/2-Plate Double Bracket.png";
+import RoofChannelBracket  from "../assets/support/Roof Channel Bracket.png";
+import SingleChannelLowPostBase  from "../assets/support/Single Channel Low Post Base.png";
+import SingleChannelHighPostBase  from "../assets/support/Single Channel High Post Base.png";
+import DoubleChannelLowPostBase  from "../assets/support/Double Channel Low Post Base.png";
+import DoubleChannelHighPostBase  from "../assets/support/Double Channel High Post Base.png";
+import SingleChannelLowTwoHolePostBase  from "../assets/support/Single Channel Low 2Hole Post Base.png";
+import SingleChannelHighTwoHolePostBase  from "../assets/support/Single Channel High 2Hole Post Base.png";
+import DoubleChannelLowTwoHolePostBase  from "../assets/support/Double Channel Low 2Hole Post Base.png";
+import DoubleChannelHighTwoHolePostBase  from "../assets/support/Double Channel High 2Hole Post Base.png";
+import SquareWasher from "../assets/support/Square Washer.png";
+import TwoHoleFlatPlate from "../assets/support/2-Hole Flat Plate.png";
+import ThreeHoleFlatPlate from "../assets/support/3-Hole Flat Plate.png";
+import FourHoleFlatPlate from "../assets/support/4-Hole Flat Plate.png";
+import ThreeHoleLPlate from "../assets/support/3-Hole L-Plate.png";
+import FourHoleLPlate from "../assets/support/4-Hole L-Plate.png";
+import ThreeHoleTeePlate from "../assets/support/3-Hole Tee Plate.png";
+import CrossPlate from "../assets/support/Cross Plate.png";
+import TwoHoleAngleFitting from "../assets/support/2-Hole Angle Fitting.png";
+import ThreeHoleAngleFitting from "../assets/support/3-Hole Angle Fitting.png";
+import FourHoleAngleFitting from "../assets/support/4-Hole Angle Fitting.png";
+import FourHoleTriangle from "../assets/support/4-Hole Triangle.png";
+
+
 
 export default function CableTrayPage({
   hero,
@@ -41,24 +69,34 @@ export default function CableTrayPage({
       title: "Brackets",
       products: [
         {
-          title: "90° Flat Bend",
+          title: "Single Channel Bracket ",
           image:
-            "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=600",
+            SingleChannelBracket ,
         },
         {
-          title: "45° Flat Bend",
+          title: "Double Channel Bracket",
           image:
-            "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600",
+             DoubleChannelBracket,
         },
         {
-          title: "Horizontal Tee",
+          title: "C-Plate Channel Bracket",
           image:
-            "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600",
+             CPlateChannelBracket,
         },
         {
-          title: "Horizontal Cross",
+          title: "2-Plate Single Bracket ",
           image:
-            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600",
+            TwoPlateSingleBracket,
+        },
+        {
+          title: "2-Plate Double Bracket ",
+          image:
+            TwoPlateDoubleBracket,
+        },
+        {
+          title: "Roof Channel Bracket",
+          image:
+            RoofChannelBracket,
         },
       ],
     },
@@ -67,19 +105,44 @@ export default function CableTrayPage({
       title: "Post Bases",
       products: [
         {
-          title: "Side Connector",
+          title: "Single Channel Low Post Base",
           image:
-            "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=600",
+            SingleChannelLowPostBase,
         },
         {
-          title: "Vertical Connector",
+          title: "Single Channel High Post Base",
           image:
-            "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600",
+            SingleChannelHighPostBase,
         },
         {
-          title: "End Plate",
+          title: "Double Channel Low Post Base",
           image:
-            "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600",
+           DoubleChannelLowPostBase,
+        },
+        {
+          title: "Double Channel High Post Base",
+          image:
+           DoubleChannelHighPostBase,
+        },
+        {
+          title: "Single Channel Low 2Hole Post Base",
+          image:
+           SingleChannelLowTwoHolePostBase,
+        },
+        {
+          title: "Single Channel High 2Hole Post Base",
+          image:
+           SingleChannelHighTwoHolePostBase,
+        },
+        {
+          title: "Double Channel Low 2Hole Post Base",
+          image:
+           DoubleChannelLowTwoHolePostBase,
+        },
+        {
+          title: "Double Channel High 2Hole Post Base",
+          image:
+           DoubleChannelHighTwoHolePostBase,
         },
       ],
     },
@@ -88,19 +151,64 @@ export default function CableTrayPage({
       title: "Fittings",
       products: [
         {
-          title: "Side Connector",
+          title: "Square Washer",
           image:
-            "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=600",
+            SquareWasher,
         },
         {
-          title: "Vertical Connector",
+          title: "2-Hole Flat Plate",
           image:
-            "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600",
+            TwoHoleFlatPlate,
         },
         {
-          title: "End Plate",
+          title: "3-Hole Flat Plate",
           image:
-            "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600",
+            ThreeHoleFlatPlate,
+        },
+        {
+          title: "4-Hole Flat Plate",
+          image:
+            FourHoleFlatPlate,
+        },
+        {
+          title: "3-Hole L-Plate",
+          image:
+            ThreeHoleLPlate,
+        },
+        {
+          title: "4-Hole L-Plate",
+          image:
+            FourHoleLPlate,
+        },
+        {
+          title: "3-Hole Tee Plate",
+          image:
+            ThreeHoleTeePlate,
+        },
+        {
+          title: "Cross Plate",
+          image:
+            CrossPlate,
+        },
+        {
+          title: "2-Hole Angle Fitting",
+          image:
+            TwoHoleAngleFitting,
+        },
+        {
+          title: "3-Hole Angle Fitting",
+          image:
+            ThreeHoleAngleFitting,
+        },
+        {
+          title: "4-Hole Angle Fitting",
+          image:
+            FourHoleAngleFitting,
+        },
+        {
+          title: "4-Hole Triangle",
+          image:
+            FourHoleTriangle,
         },
       ],
     },

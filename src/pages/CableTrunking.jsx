@@ -3,6 +3,14 @@ import ProductCategory from "../components/products/ProductCategory";
 import ProductsNavbar from "../components/ProductsNav";
 import ProductBanner from "../components/ProductBanner";
 import TrunkingImage from "../assets/trunking/trunking.jpeg";
+import FlatBend from "../assets/trunking/90 Flat Bend.png";
+import FlatTee from "../assets/trunking/Flat Tee.png";
+import Cross from "../assets/trunking/Cross.png";
+import Bend from "../assets/trunking/45 Flat Bend.png";
+import Riser from "../assets/trunking/90 Riser.png";
+import Connector from "../assets/trunking/Connector.png";
+import EndCap from "../assets/trunking/End Cap.png";
+import BoxConnector from "../assets/trunking/Box Connector.png";
 
 export default function CableTrayPage({
   hero,
@@ -49,22 +57,42 @@ export default function CableTrayPage({
         {
           title: "90° Flat Bend",
           image:
-            "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=600",
+            FlatBend,
         },
         {
           title: "45° Flat Bend",
           image:
-            "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600",
+             FlatTee ,
         },
         {
-          title: "Horizontal Tee",
+          title: "Cross",
           image:
-            "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600",
+            Cross,
         },
         {
-          title: "Horizontal Cross",
+          title: "45° Flat Bend",
           image:
-            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600",
+            Bend,
+        },
+        {
+          title: "90° Riser",
+          image:
+            Riser,
+        },
+        {
+          title: "Connector",
+          image:
+             Connector,
+        },
+        {
+          title: "End Cap",
+          image:
+             EndCap,
+        },
+        {
+          title: "Box Connector",
+          image:
+             BoxConnector,
         },
       ],
     },
