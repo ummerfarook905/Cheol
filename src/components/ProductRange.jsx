@@ -1,4 +1,6 @@
 import React from "react";
+import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Ladder from "../assets/ladder/ladder.jpeg";
 import Tray from "../assets/tray/tray2.png";
 import Trunking from "../assets/trunking/trunking2.png";
@@ -42,6 +44,7 @@ const products = [
 ];
 
 export default function ProductRange() {
+  const navigate = useNavigate();
   return (
     <section className="bg-white py-12 lg:py-20">
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
@@ -97,6 +100,18 @@ export default function ProductRange() {
             <Card {...products[3]} height="h-[260px]" />
           </div>
 
+        </div>
+        <div className="mt-12 flex justify-center">
+          <button
+            onClick={() => navigate("/products")}
+            className="group inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold uppercase tracking-wide px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            Explore Products
+            <ArrowRight
+              size={20}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </button>
         </div>
       </div>
     </section>

@@ -100,13 +100,13 @@ export default function ContactForm() {
               <div className="grid md:grid-cols-2 gap-6">
 
                 <Input label="Full Name *" />
-                <Input label="Company *" />
+                <Input label="Company " />
 
-                <Input label="Email Address *" type="email" />
+                <Input label="Email Address " type="email" />
                 <Input label="Phone Number *" />
 
                 <Input label="Country / Region" />
-                <Input label="Product Type *" />
+                <Input label="Product Type " />
 
               </div>
 

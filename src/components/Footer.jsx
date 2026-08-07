@@ -18,7 +18,7 @@ export default function Footer() {
 
           <img
             src= {LogoImage}
-            className="h-12 mb-6"
+            className="h-20 mb-6"
             alt=""
           />
 
@@ -43,19 +43,26 @@ export default function Footer() {
           <ul className="space-y-3">
 
             <li>
-              <Link to="/">Home</Link>
+               <Link
+                  to="/"
+                  className="text-gray-300 hover:text-[#D18329] transition-colors duration-300"
+                >
+                  Home
+                </Link>
             </li>
 
             <li>
-              <Link to="/about">About Us</Link>
+              <Link to="/about" className="text-gray-300 hover:text-[#D18329] transition-colors duration-300">
+              About Us
+              </Link>
             </li>
 
             <li>
-              <Link to="/products">Products</Link>
+              <Link to="/products" className="text-gray-300 hover:text-[#D18329] transition-colors duration-300">Products</Link>
             </li>
 
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" className="text-gray-300 hover:text-[#D18329] transition-colors duration-300">Contact</Link>
             </li>
 
           </ul>
@@ -73,25 +80,25 @@ export default function Footer() {
           <ul className="space-y-3">
 
             <li>
-              <Link to="/cable-ladder">
+              <Link to="/cable-ladder" className="text-gray-300 hover:text-[#D18329] transition-colors duration-300">
                 Cable Ladder
               </Link>
             </li>
 
             <li>
-              <Link to="/cable-tray">
+              <Link to="/cable-tray" className="text-gray-300 hover:text-[#D18329] transition-colors duration-300">
                 Cable Tray
               </Link>
             </li>
 
             <li>
-              <Link to="/cable-trunking">
+              <Link to="/cable-trunking" className="text-gray-300 hover:text-[#D18329] transition-colors duration-300">
                 Cable Trunking
               </Link>
             </li>
 
             <li>
-              <Link to="/support-system">
+              <Link to="/support-system" className="text-gray-300 hover:text-[#D18329] transition-colors duration-300">
                 Channel & Support
               </Link>
             </li>

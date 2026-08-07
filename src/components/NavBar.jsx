@@ -23,7 +23,7 @@ export default function Navbar() {
             <img
               src= {LogoImage}
               alt="Cheol"
-              className="h-12 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
