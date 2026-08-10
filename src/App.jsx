@@ -14,7 +14,7 @@ import SupportSystem from "./pages/SupportSystem";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Cheol">
 
       <Routes>
 
