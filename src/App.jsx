@@ -14,10 +14,8 @@ import SupportSystem from "./pages/SupportSystem";
 
 function App() {
   return (
-    <BrowserRouter basename="/Cheol">
-
+    <BrowserRouter>
       <Routes>
-
         <Route element={<MainLayout />}>
 
           <Route path="/" element={<Home />} />
@@ -40,9 +38,7 @@ function App() {
           />
 
         </Route>
-
       </Routes>
-
     </BrowserRouter>
   );
 }
