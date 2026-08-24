@@ -19,7 +19,7 @@ const products = [
   {
     id: 2,
     title: "Cable Tray",
-    badge: "",
+    badge: "Perforated",
     desc: "",
     image:
       Tray,
