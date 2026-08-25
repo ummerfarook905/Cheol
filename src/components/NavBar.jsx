@@ -10,126 +10,298 @@ export default function NavBar() {
     { name: "Home", path: "/" },
     { name: "Products", path: "/products" },
     { name: "About Us", path: "/about" },
+    { name: "Certifications", path: "/certifications" },
     { name: "Contact Us", path: "/contact" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#0F2746]/95 backdrop-blur-md shadow-md">
-      <div className="max-w-7xl mx-auto px-5 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+    <header className="fixed top-0 left-0 z-50 w-full bg-[#0F2746]/95 backdrop-blur-md shadow-md">
+      
+      {/* Main Navbar */}
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 xl:px-10">
+        <div className="flex h-[72px] items-center justify-between sm:h-[78px] lg:h-[84px]">
 
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
+          {/* ================= LOGO ================= */}
+          <Link
+            to="/"
+            className="flex shrink-0 items-center"
+            onClick={() => setOpen(false)}
+          >
             <img
-              src= {LogoImage}
+              src={LogoImage}
               alt="Cheol"
-              className="h-20 w-auto"
+              className="
+                h-[54px]
+                w-auto
+                object-contain
+                sm:h-[62px]
+                lg:h-[72px]
+                xl:h-[76px]
+              "
             />
           </Link>
 
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-10">
-
+          {/* ================= DESKTOP MENU ================= */}
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8 2xl:gap-10">
             {navItems.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.path}
                 className={({ isActive }) =>
-                  `relative uppercase text-sm tracking-widest font-medium transition duration-300 ${
+                  `
+                  group
+                  relative
+                  whitespace-nowrap
+                  py-2
+                  text-[12px]
+                  xl:text-[13px]
+                  2xl:text-sm
+                  font-medium
+                  uppercase
+                  tracking-[0.12em]
+                  transition-all
+                  duration-300
+                  ${
                     isActive
                       ? "text-[#D18329]"
                       : "text-white hover:text-[#D18329]"
-                  }`
+                  }
+                  `
                 }
               >
                 {item.name}
 
-                <span className="absolute left-0 -bottom-2 h-[2px] w-0 bg-[#D18329] transition-all duration-300 hover:w-full"></span>
-
+                {/* Underline */}
+                <span
+                  className="
+                    absolute
+                    bottom-0
+                    left-0
+                    h-[2px]
+                    w-0
+                    bg-[#D18329]
+                    transition-all
+                    duration-300
+                    group-hover:w-full
+                  "
+                />
               </NavLink>
             ))}
-
           </nav>
 
-          {/* Quote Button */}
+          {/* ================= DESKTOP QUOTE BUTTON ================= */}
           <Link
             to="/contact"
-            className="hidden lg:flex bg-[#D18329] hover:bg-orange-600 transition px-6 py-3 rounded text-white font-semibold"
+            className="
+              hidden
+              lg:flex
+              shrink-0
+              items-center
+              justify-center
+              rounded
+              bg-[#D18329]
+              px-4
+              py-2.5
+              text-sm
+              font-semibold
+              text-white
+              transition-all
+              duration-300
+              hover:bg-orange-600
+              xl:px-5
+              xl:py-3
+              2xl:px-6
+            "
           >
             Get Quote
           </Link>
 
-          {/* Mobile Button */}
-
+          {/* ================= MOBILE MENU BUTTON ================= */}
           <button
+            type="button"
+            aria-label="Open menu"
+            aria-expanded={open}
             onClick={() => setOpen(true)}
-            className="md:hidden text-white"
+            className="
+              flex
+              h-11
+              w-11
+              items-center
+              justify-center
+              rounded
+              text-white
+              transition
+              hover:bg-white/10
+              lg:hidden
+            "
           >
-            <Menu size={30} />
+            <Menu size={30} strokeWidth={2} />
           </button>
-
         </div>
       </div>
 
-      {/* Mobile Sidebar */}
+      {/* ================= OVERLAY ================= */}
+      {open && (
+        <div
+          onClick={() => setOpen(false)}
+          className="
+            fixed
+            inset-0
+            z-[60]
+            bg-black/60
+            backdrop-blur-[2px]
+            lg:hidden
+          "
+        />
+      )}
 
-      <div
-        className={`fixed top-0 right-0 h-screen w-72 bg-[#0F2746] transform transition-transform duration-300 ${
-          open ? "translate-x-0" : "translate-x-full"
-        }`}
+      {/* ================= MOBILE SIDEBAR ================= */}
+      <aside
+        className={`
+          fixed
+          right-0
+          top-0
+          z-[70]
+          flex
+          h-screen
+          w-[82%]
+          max-w-[360px]
+          flex-col
+          bg-[#0F2746]
+          shadow-2xl
+          transition-transform
+          duration-300
+          ease-in-out
+          lg:hidden
+          ${
+            open
+              ? "translate-x-0"
+              : "translate-x-full"
+          }
+        `}
       >
-        <div className="flex justify-between items-center p-6 border-b border-gray-700">
 
-          <img
-            src="/images/logo.png"
-            alt=""
-            className="h-10"
-          />
+        {/* Sidebar Header */}
+        <div
+          className="
+            flex
+            min-h-[72px]
+            items-center
+            justify-between
+            border-b
+            border-white/10
+            px-5
+            sm:px-6
+          "
+        >
+          {/* Logo */}
+          <Link
+            to="/"
+            onClick={() => setOpen(false)}
+            className="flex items-center"
+          >
+            <img
+              src={LogoImage}
+              alt="Cheol"
+              className="
+                h-[48px]
+                w-auto
+                object-contain
+                sm:h-[54px]
+              "
+            />
+          </Link>
 
-          <button onClick={() => setOpen(false)}>
-            <X size={30} className="text-white" />
+          {/* Close Button */}
+          <button
+            type="button"
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+            className="
+              flex
+              h-10
+              w-10
+              items-center
+              justify-center
+              rounded
+              text-white
+              transition
+              hover:bg-white/10
+            "
+          >
+            <X size={28} />
           </button>
-
         </div>
 
-        <nav className="flex flex-col p-6 gap-6">
-
+        {/* Sidebar Navigation */}
+        <nav
+          className="
+            flex
+            flex-1
+            flex-col
+            overflow-y-auto
+            px-5
+            py-7
+            sm:px-6
+          "
+        >
           {navItems.map((item) => (
             <NavLink
               key={item.name}
               to={item.path}
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
-                `uppercase tracking-wider text-lg ${
+                `
+                border-b
+                border-white/10
+                py-4
+                text-[15px]
+                font-medium
+                uppercase
+                tracking-[0.12em]
+                transition-all
+                duration-300
+                sm:text-base
+                ${
                   isActive
-                    ? "text-[#D18329]"
-                    : "text-white"
-                }`
+                    ? "pl-2 text-[#D18329]"
+                    : "text-white hover:pl-2 hover:text-[#D18329]"
+                }
+                `
               }
             >
               {item.name}
             </NavLink>
           ))}
 
+          {/* Mobile Quote Button */}
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="mt-6 bg-[#D18329] text-center py-3 rounded text-white"
+            className="
+              mt-8
+              flex
+              items-center
+              justify-center
+              rounded
+              bg-[#D18329]
+              px-5
+              py-3.5
+              text-sm
+              font-semibold
+              uppercase
+              tracking-wider
+              text-white
+              transition-all
+              duration-300
+              hover:bg-orange-600
+              sm:text-base
+            "
           >
             Get Quote
           </Link>
-
         </nav>
-      </div>
-
-      {/* Overlay */}
-
-      {open && (
-        <div
-          onClick={() => setOpen(false)}
-          className="fixed inset-0 bg-black/60 md:hidden"
-        />
-      )}
+      </aside>
     </header>
   );
 }

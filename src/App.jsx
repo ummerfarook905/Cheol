@@ -11,6 +11,7 @@ import CableLadder from "./pages/CableLadder";
 import CableTray from "./pages/CableTray";
 import CableTrunking from "./pages/CableTrunking";
 import SupportSystem from "./pages/SupportSystem";
+import Certifications from "./pages/Certifications";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="/products" element={<Products />} />
 
           <Route path="/contact" element={<Contact />} />
+
+          <Route path="/certifications" element={<Certifications />} />
 
           <Route path="/cable-ladder" element={<CableLadder />} />
 

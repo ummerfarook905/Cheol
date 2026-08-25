@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ArrowRight } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
 
 const steps = [
   {
@@ -25,14 +24,6 @@ const certifications = [
   "BSEN 10327",
 ];
 
-// WhatsApp
-const whatsappNumber = "9710524709704";
-
-const whatsappMessage = encodeURIComponent(
-  "Hello, I would like to make a project enquiry."
-);
-
-const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
 export default function ContactForm() {
   const form = useRef();
@@ -253,16 +244,6 @@ export default function ContactForm() {
                 )}
               </button>
 
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-green-500 hover:bg-green-600 text-white py-5 rounded-md uppercase tracking-wide font-medium transition flex justify-center items-center gap-2"
-              >
-                <FaWhatsapp size={22} />
-
-                Chat on WhatsApp
-              </a>
 
             </form>
 
