@@ -42,7 +42,7 @@ export default function ContactSection() {
 
               <div className="flex gap-4">
                 <Phone className="text-[#D18329]" />
-                <span>+971 52 855 0065</span>
+                <span>+971 02 442 1056</span>
               </div>
 
               <div className="flex gap-4">
