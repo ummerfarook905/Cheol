@@ -128,7 +128,7 @@ export default function Footer() {
             <div className="flex gap-3">
               <Phone size={20} />
               <span>
-                +971 52 855 0065
+                +971 02 442 1056
               </span>
             </div>
 
